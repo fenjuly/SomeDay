@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appname">TraingDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Title Content  -->
+    <string name="title">你在南方的艳阳里，大雪纷飞,我在北方的寒夜里，四季如春
+如果天黑之前来得及，我要忘了你的眼睛</string>
+    <string name="content">南山南</string>
+
+    <!-- Action Bar -->
+    <string name="star">star</string>
+    <string name="refresh">refresh</string>
+    <string name="share">share</string>
+
+    <!-- ImageView Activity-->
+    <string name="view_big_img">查看大图</string>
+    <string name="url">http://i.imgur.com/TcJgiVC.jpg</string>
+
+    <!-- Acticle Activity-->
+    <string name="article_url">http://appao.com/youth/magazines/34/articles/136</string>
+
+    <!-- Dialog-->
+    <string name="dialog_title">Delete this item?</string>
+    <string name="dialog_content">ただ君を愛したい確
+何もないけれどそう誓うよ
+何度も戶惑う　壁にぶつかりながら
+求め合うふたりだから　永遠に</string>
+    <string name="dialog_cancel">cancel</string>
+    <string name="dialog_ok">ok</string>
+</resources>

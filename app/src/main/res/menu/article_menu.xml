@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/star"
+        android:icon="@drawable/star"
+        android:showAsAction="always"
+        android:title="@string/star"
+        />
+
+    <item android:id="@+id/share"
+        android:icon="@drawable/share_black"
+        android:showAsAction="always"
+        android:title="@string/share"
+        />
+</menu>

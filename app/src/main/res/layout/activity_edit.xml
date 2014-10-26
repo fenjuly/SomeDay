@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="26sp"
+                flatui:fl_textColor="fl_main" />
+
+            <com.cengalabs.flatui.views.FlatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:hint="Title..."
+                flatui:fl_fieldStyle="fl_box"
+                flatui:fl_theme="@array/blood" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/content_edit"
+            android:layout_below="@+id/title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textSize="26sp"
+                flatui:fl_textColor="fl_main" />
+
+            <com.cengalabs.flatui.views.FlatEditText
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:gravity="top"
+                android:hint="Write Something..."
+                flatui:fl_fieldStyle="fl_box"
+                flatui:fl_theme="@array/blood" />
+        </LinearLayout>
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/save"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/content_edit"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save It"
+            android:textSize="26sp"
+            flatui:fl_touchEffect="fl_ripple" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

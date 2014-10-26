@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">6dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- LIST ITEM PADDING-->
+    <dimen name="list_item_padding">12dp</dimen>
+    <dimen name="text_margin">5dp</dimen>
+    <dimen name="img_w_h">70dp</dimen>
+    <dimen name="text_layout_margin">5dp</dimen>
+
+    <!-- DROP_DOWN_ITEM -->
+    <dimen name="drop_dowm_text_margin">6dp</dimen>
+    <dimen name="drop_layout_width">48dp</dimen>
+</resources>
