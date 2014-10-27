@@ -17,8 +17,8 @@ public class DropListViewAdapter  extends BaseAdapter{
 
     private Context mContext;
 
-    String[] des = {"文章", "图片", "星标"};
-    int [] icons = {R.drawable.article, R.drawable.picture, R.drawable.star};
+    String[] des = {"文章", "图片", "草稿"};
+    int [] icons = {R.drawable.article, R.drawable.picture, R.drawable.draft};
 
 
     public DropListViewAdapter(Context mContext) {

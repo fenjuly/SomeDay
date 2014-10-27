@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.liurongchan.traingdemo.demo"
-    >
+    package="com.example.liurongchan.traingdemo.demo">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        >
+        android:icon="@drawable/ic_launcher">
+
+        <provider
+            android:name=".dao.DataProvider"
+            android:authorities="com.fenjuly.provider"
+            android:exported="false">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+
         <activity
             android:name=".MyActivity"
-            android:theme="@style/Theme.Example"
-            android:label="@string/appname" >
+            android:label="@string/appname"
+            android:theme="@style/Theme.Example">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImageViewActivity"/>
-        <activity android:name=".ArticleActivity"/>
-        <activity android:name=".EditActivity"/>
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".ArticleActivity" />
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/appname"
+            android:theme="@style/Theme.Example"
+            android:uiOptions="splitActionBarWhenNarrow" />
     </application>
 
 </manifest>

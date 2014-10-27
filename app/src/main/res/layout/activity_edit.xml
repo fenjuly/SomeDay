@@ -1,79 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="vertical">
+    android:background="@color/background"
+    android:orientation="vertical">
 
-
-    <RelativeLayout
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:hint="梦のしずく"
+        android:minHeight="50dp"
+        android:padding="5dp"
+        android:textColor="@color/text" />
 
-        <LinearLayout
-            android:id="@+id/title_edit"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical">
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="#00000000"
+            android:textSize="16sp"
+            android:gravity="top|left"
+            android:hint="爱(あい)よりも恋..."
+            android:minHeight="250dp"
+            android:padding="5dp"
+            android:textColor="@color/text" />
 
-            <com.cengalabs.flatui.views.FlatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Title"
-                android:textSize="26sp"
-                flatui:fl_textColor="fl_main" />
-
-            <com.cengalabs.flatui.views.FlatEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="4dp"
-                android:hint="Title..."
-                flatui:fl_fieldStyle="fl_box"
-                flatui:fl_theme="@array/blood" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/content_edit"
-            android:layout_below="@+id/title_edit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:orientation="vertical">
-
-            <com.cengalabs.flatui.views.FlatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Content"
-                android:textSize="26sp"
-                flatui:fl_textColor="fl_main" />
-
-            <com.cengalabs.flatui.views.FlatEditText
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="4dp"
-                android:gravity="top"
-                android:hint="Write Something..."
-                flatui:fl_fieldStyle="fl_box"
-                flatui:fl_theme="@array/blood" />
-        </LinearLayout>
-
-        <com.cengalabs.flatui.views.FlatButton
-            android:id="@+id/save"
-            android:layout_marginLeft="4dp"
-            android:layout_below="@+id/content_edit"
-            android:layout_marginTop="6dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save It"
-            android:textSize="26sp"
-            flatui:fl_touchEffect="fl_ripple" />
-
-    </RelativeLayout>
-
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

@@ -14,6 +14,11 @@
     <string name="star">star</string>
     <string name="refresh">refresh</string>
     <string name="share">share</string>
+    <string name="edit">edit</string>
+    <string name="photo">photo</string>
+    <string name="save">save</string>
+    <string name="draft">draft</string>
+    <string name="delete">delete</string>
 
     <!-- ImageView Activity-->
     <string name="view_big_img">查看大图</string>
@@ -30,4 +35,6 @@
 求め合うふたりだから　永遠に</string>
     <string name="dialog_cancel">cancel</string>
     <string name="dialog_ok">ok</string>
+
+
 </resources>

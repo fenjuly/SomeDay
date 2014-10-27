@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MyActivity" >
 
-    <item android:id="@+id/star"
-        android:icon="@drawable/refresh"
+    <item android:id="@+id/edit"
+        android:icon="@drawable/edit"
         android:showAsAction="always"
-        android:title="@string/refresh"
+        android:title="@string/edit"
         />
 </menu>

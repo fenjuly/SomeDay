@@ -1,12 +1,14 @@
 package com.example.liurongchan.traingdemo.demo;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.liurongchan.traingdemo.demo.adapter.DropListViewAdapter;
 import com.example.liurongchan.traingdemo.demo.fragment.GridFragment;
@@ -45,6 +47,14 @@ public class MyActivity extends FragmentActivity implements ActionBar.OnNavigati
     protected void onDestroy() {
         super.onDestroy();
         ImageLoader.getInstance().destroy();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.edit) {
+            startActivity(new Intent(this, EditActivity.class));
+        }
+        return true;
     }
 
     @Override
