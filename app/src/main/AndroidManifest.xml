@@ -2,10 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.liurongchan.traingdemo.demo">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <application
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".App"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher">
+        android:icon="@drawable/icon"
+        android:label="@string/name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        tools:replace="android:icon,android:theme,android:label">
 
         <provider
             android:name=".dao.DataProvider"
@@ -14,10 +23,7 @@
             <grant-uri-permission android:pathPattern=".*" />
         </provider>
 
-        <activity
-            android:name=".MyActivity"
-            android:label="@string/appname"
-            android:theme="@style/Theme.Example">
+        <activity android:name=".MyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,12 +31,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImageViewActivity" />
-        <activity android:name=".ArticleActivity" />
         <activity
             android:name=".EditActivity"
-            android:label="@string/appname"
-            android:theme="@style/Theme.Example"
             android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:name=".DiaryActivity"></activity>
     </application>
 
 </manifest>

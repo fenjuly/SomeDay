@@ -7,13 +7,14 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/title_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="#00000000"
-        android:hint="梦のしずく"
+        android:hint="今天想说..."
         android:minHeight="50dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:textColor="@color/text" />
 
     <View
@@ -25,19 +26,37 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:padding="5dp"
         android:scrollbars="vertical">
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:textSize="16sp"
-            android:gravity="top|left"
-            android:hint="爱(あい)よりも恋..."
-            android:minHeight="250dp"
-            android:padding="5dp"
-            android:textColor="@color/text" />
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textSize="16sp"
+                android:gravity="top|left"
+                android:hint="纪录由此开始..."
+                android:minHeight="250dp"
+                android:padding="5dp"
+                android:textColor="@color/text" />
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                />
+
+            </LinearLayout>
 
     </ScrollView>
+    
+
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.liurongchan.traingdemo.demo.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,8 +18,8 @@ public class DropListViewAdapter  extends BaseAdapter{
 
     private Context mContext;
 
-    String[] des = {"文章", "图片", "草稿"};
-    int [] icons = {R.drawable.article, R.drawable.picture, R.drawable.draft};
+    String[] des = {"文章", "草稿"};
+    int [] icons = {R.drawable.article, R.drawable.draft};
 
 
     public DropListViewAdapter(Context mContext) {
@@ -27,7 +28,7 @@ public class DropListViewAdapter  extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Override
@@ -48,6 +49,7 @@ public class DropListViewAdapter  extends BaseAdapter{
         TextView type = (TextView) view.findViewById(R.id.type);
         ImageView icon = (ImageView) view.findViewById(R.id.icon);
         type.setText(des[position]);
+        type.setTextColor(Color.WHITE);
         icon.setImageResource(icons[position]);
         return view;
     }

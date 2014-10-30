@@ -45,7 +45,7 @@ public class ImageViewActivity extends Activity {
             }
         });
 
-        String imgUrl = getResources().getString(R.string.url);
+        String imgUrl = getIntent().getStringExtra(DiaryActivity.FILE_URI);
         DisplayImageOptions options = new DisplayImageOptions.Builder().cacheOnDisc(true)
                 .considerExifParams(true).build();
         ImageLoader.getInstance().displayImage(imgUrl, photoView, options, new SimpleImageLoadingListener() {

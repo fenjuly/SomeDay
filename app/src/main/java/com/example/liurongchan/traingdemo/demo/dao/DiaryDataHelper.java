@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.BaseColumns;
+import android.support.v4.content.CursorLoader;
 
 import com.example.liurongchan.traingdemo.demo.dao.database.Column;
 import com.example.liurongchan.traingdemo.demo.dao.database.SQLiteTable;
@@ -34,6 +35,7 @@ public class DiaryDataHelper extends BaseDataHelper {
         values.put(DiaryDB.CREATE_AT, diary.create_at);
         values.put(DiaryDB.MODIFY_AT, diary.modify_at);
         values.put(DiaryDB.PIC_URL, diary.pic_url);
+        values.put(DiaryDB.COMPLETE, diary.complete);
         return values;
     }
 
@@ -53,7 +55,7 @@ public class DiaryDataHelper extends BaseDataHelper {
         Diary diary = null;
         Cursor cursor = query(null, DiaryDB._ID + "=?" ,new String[] {
                 String.valueOf(_id)
-        }, DiaryDB._ID + "ASC");
+        }, DiaryDB._ID);
         if(cursor.moveToFirst()) {
             diary = Diary.fromCursor(cursor);
         }
@@ -69,6 +71,30 @@ public class DiaryDataHelper extends BaseDataHelper {
         delete(getContentUri(), DiaryDB._ID + "=?" , new String[] {
                 String.valueOf(diary._id)
         });
+    }
+
+    public void update(Diary diary) {
+        update(getContentValues(diary), DiaryDB._ID + "=?", new String[]{
+                String.valueOf(diary._id)
+        });
+    }
+
+    public CursorLoader getCompletedCursorLoader() {
+        return new CursorLoader(getContext(), getContentUri(), null,DiaryDB.COMPLETE + "=?", new String[] {
+                String.valueOf(Diary.MAIN_COMPLETE_STATUS)
+        }, DiaryDB._ID + " ASC");
+    }
+
+    public CursorLoader getUnCompletedCursorLoader() {
+        return new CursorLoader(getContext(), getContentUri(), null,DiaryDB.COMPLETE + "=?", new String[] {
+                String.valueOf(Diary.DRAFT_COMPLETE_STATUS)
+        }, DiaryDB._ID + " ASC");
+    }
+
+    public CursorLoader getQueryByIdCursorLoader(Long _id) {
+        return new CursorLoader(getContext(), getContentUri(), null,DiaryDB._ID + "=?", new String[] {
+                String.valueOf(_id)
+        }, DiaryDB._ID + " ASC");
     }
 
     public static final class DiaryDB implements BaseColumns {
@@ -87,11 +113,14 @@ public class DiaryDataHelper extends BaseDataHelper {
 
         public static final String PIC_URL = "pic_url";
 
+        public static final String COMPLETE = "complete";
+
         public static final SQLiteTable TABLE = new SQLiteTable(TABLE_NAME)
                 .addColumn(TITLE, Column.DataType.TEXT)
                 .addColumn(CONTENT, Column.DataType.TEXT)
                 .addColumn(CREATE_AT, Column.DataType.TEXT)
                 .addColumn(MODIFY_AT, Column.DataType.TEXT)
-                .addColumn(PIC_URL, Column.DataType.TEXT);
+                .addColumn(PIC_URL, Column.DataType.TEXT)
+                .addColumn(COMPLETE, Column.DataType.INTEGER);
     }
 }

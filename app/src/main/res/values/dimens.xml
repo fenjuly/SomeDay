@@ -8,6 +8,9 @@
     <dimen name="text_margin">5dp</dimen>
     <dimen name="img_w_h">70dp</dimen>
     <dimen name="text_layout_margin">5dp</dimen>
+    <dimen name="text_max_height">60dp</dimen>
+    <dimen name="text_margin_bottom">3dp</dimen>
+    <dimen name="item_height">100dp</dimen>
 
     <!-- DROP_DOWN_ITEM -->
     <dimen name="drop_dowm_text_margin">6dp</dimen>

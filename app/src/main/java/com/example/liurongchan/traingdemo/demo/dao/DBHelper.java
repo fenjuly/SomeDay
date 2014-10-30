@@ -3,6 +3,7 @@ package com.example.liurongchan.traingdemo.demo.dao;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by liurongchan on 14/10/26.
@@ -19,7 +20,7 @@ public class DBHelper  extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        DiaryDataHelper.DiaryDB.TABLE.create(sqLiteDatabase);
     }
 
     @Override

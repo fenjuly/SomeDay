@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="appname">TraingDemo</string>
+    <string name="name">Some Day</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Title Content  -->
+    <!-- Main -->
     <string name="title">你在南方的艳阳里，大雪纷飞,我在北方的寒夜里，四季如春
 如果天黑之前来得及，我要忘了你的眼睛</string>
     <string name="content">南山南</string>
+    <string name="loading">正在加载数据</string>
+    <string name="save_as_draft">保存为草稿</string>
+    <string name="notice">贴着屏幕右边向左滑可以删除哦...</string>
 
     <!-- Action Bar -->
     <string name="star">star</string>
@@ -36,5 +39,28 @@
     <string name="dialog_cancel">cancel</string>
     <string name="dialog_ok">ok</string>
 
+    <!-- Edit -->
+    <string name="choose_pic_source">选择图片来源</string>
+    <string name="local">从本地获取</string>
+    <string name="takeing">拍一张吧</string>
+    <string name="wait">请稍等...</string>
+    <string name="folder">diary</string>
+    <string name="no_title">标题不能为空哦！</string>
+    <string name="no_content">总还是要写点什么吧(-_-)</string>
+    <string name="title_too_long">标题不能超过25个字哦</string>
+    <string name="content_too_short">内容还是要5个字以上吧</string>
+    <string name="save_success">保存成功</string>
+    <string name="exit_without_save">注意</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="exit_text">确定放弃这次纪录？每一次书写都是一次感悟，
+        请做最好的选择</string>
+
+    <!-- Exception-->
+    <string name="position_exception">unknow the position</string>
+
+    <!--Share-->
+    <string name="share_title">%1$s－我的日记</string>
+    <string name="shae_content">%1$s  %2$s ---分享自EveryDay(made by [FeN]July)</string>
 
 </resources>
