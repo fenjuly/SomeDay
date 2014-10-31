@@ -61,6 +61,6 @@
 
     <!--Share-->
     <string name="share_title">%1$s－我的日记</string>
-    <string name="shae_content">%1$s  %2$s ---分享自EveryDay(made by [FeN]July)</string>
+    <string name="shae_content">%1$s  %2$s ---分享自EveryDay(made by [FeN]July with love)--下载(https://github.com/fenjuly/SomeDay/releases/download/1.0/someday.apk)</string>
 
 </resources>
