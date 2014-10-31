@@ -8,7 +8,6 @@ ScreenShort
 
 ![Imgur](http://i.imgur.com/9U0KJZT.png)
 ![Imgur](http://i.imgur.com/K0rmU6G.png)
-![Imgur](http://i.imgur.com/nFwYn0W.png)
 
 What It Do
 ---
@@ -22,5 +21,9 @@ Thanks
 
 I leanrd a lot from above two persons.
 
-Liscence Under MIT
+Download
+---
+[someday](https://github.com/fenjuly/SomeDay/releases/download/1.0/someday.apk)
+
+Lisence Under MIT
 ---
