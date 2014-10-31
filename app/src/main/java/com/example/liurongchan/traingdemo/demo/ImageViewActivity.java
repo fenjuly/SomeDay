@@ -30,7 +30,6 @@ public class ImageViewActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(R.style.Theme_Example);
         setContentView(R.layout.activity_img);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         photoView = (PhotoView) findViewById(R.id.photoView);
