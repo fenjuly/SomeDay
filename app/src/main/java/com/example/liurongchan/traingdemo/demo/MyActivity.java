@@ -34,7 +34,6 @@ public class MyActivity extends FragmentActivity implements ActionBar.OnNavigati
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         actionBar.setListNavigationCallbacks(new DropListViewAdapter(this), this);
         fragmentManager = getSupportFragmentManager();
-        ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(getApplicationContext()));
     }
 
     private void setFragment(Fragment fragment) {
