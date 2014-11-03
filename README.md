@@ -24,6 +24,7 @@ I leanrd a lot from above two persons.
 Download
 ---
 [someday](https://github.com/fenjuly/SomeDay/releases/download/1.0/someday.apk)
+[wandoujia](http://www.wandoujia.com/apps/com.example.liurongchan.traingdemo)
 
 Lisence Under MIT
 ---
